@@ -48,7 +48,7 @@
     visibility:hidden;
 }
 .show-menu #line3{
-    transform: (45deg)translate(.3rem, -.4rem );;
+    transform: (45deg)translate(.3rem, -.4rem );
 }
 header{
     width: 100%;
