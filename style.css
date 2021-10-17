@@ -10,10 +10,7 @@
     
 }
 :root{
-    --font-primary:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*"Baloo Da 2", serif;*/
-    --fonot-secundary: "Josefin Slab",serif;
-    --font-action: Georgia, 'Times New Roman', Times, serif /*Pode ser qualquer uma */
-
+    
 
 }
 
@@ -49,6 +46,18 @@
 }
 .show-menu #line3{
     transform: (45deg)translate(.3rem, -.4rem );
+}
+.hamburguer span{
+    position: absolute;
+    left: 3rem;
+    height: 2rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #42275a;
+    color: white;
+    
 }
 header{
     width: 100%;
