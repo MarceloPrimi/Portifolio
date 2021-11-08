@@ -1,7 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,100;1,500&family=Mulish:ital,wght@0,300;1,200&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +15,10 @@
     
 }
 :root{
-    
+    --font-primary:"Fredoka One",serif; /*"Baloo Da 2", serif;*/
+    --fonot-secundary: "Merienda",serif;
+    --font-action: "Fredoka One", serif /*Pode ser qualquer uma */
+
 
 }
 
@@ -47,7 +55,7 @@
 .show-menu #line3{
     transform: (45deg)translate(.3rem, -.4rem );
 }
-.hamburguer span{
+.hamburguer span{  /* Aqui eu configuro as configuraçoes do Fechar */ 
     position: absolute;
     left: 3rem;
     height: 2rem;
@@ -57,7 +65,20 @@
     align-items: center;
     background-color: #42275a;
     color: white;
-    
+    font-family: var(--font-action);
+    opacity: 0;
+}
+.hamburguer span::before{  /* Aqui consigo configurar a seta do fechar */
+    content: "";
+    position: absolute;
+    border-right: .5rem solid #42275a;
+    border-top: .5rem solid transparent;
+    border-left: .5rem solid transparent;
+    border-bottom: .5rem solid transparent;
+    left: -1rem;
+}
+.show-menu .hamburguer:hover span{
+opacity: 1;
 }
 header{
     width: 100%;
