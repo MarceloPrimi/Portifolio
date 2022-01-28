@@ -19,7 +19,7 @@
             <div class="line" id="line2"></div>
             <div class="line" id="line3"></div>
         </div>
-<header>
+<header id="home">
     <div class="img-wrapper">
         <img src="img/bg.jpg" alt="">
     </div>
@@ -36,10 +36,10 @@
                 <nav>
        <ul class="menu">
          <li class="menu-item"><a href="" class="menu-link">Home</a></li>
-         <li class="menu-item"><a href="" class="menu-link">Conhecimentos</a></li>
-         <li class="menu-item"><a href="" class="menu-link">Projetos</a></li>
-         <li class="menu-item"><a href="" class="menu-link">Contato</a></li>
-         <li class="menu-item"><a href="" class="menu-link">Orçamento</a></li>
+         <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimentos</a></li>
+         <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+         <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+         <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
                     </ul>
                 </nav>
      <div class="social-media">
@@ -53,7 +53,7 @@
 
 
   <!-- Posso criar a estrutura section apenas com esse comando section.sessao-conhecimentos>().sessao-header>h1)+.conhecimentos>(.conhecimento>(.conhecimento-header>.i.fab+h3).conhecimento-text>p{lorem30})*6-->
-  <section class="sessao-conhecimento">
+  <section class="sessao-conhecimento" id="conhecimentos">
       <div class="sessao-header">
           <h1>Conhecimentos</h1>
       </div>
@@ -121,7 +121,7 @@
 <div class="sessao-header">
     <h1>Projetos</h1> <!-- O titulo ja vai vir formatado pois foi utilizado a mesma class do conhecimentos-->
 </div>
-<div class="projetos">
+<div class="projetos" id="projetos">
     <div class="card">
         <div class="card-img-wrapper">
             <img src="Img/projeto1.jpg" alt="imagem do projeto todo" />
@@ -185,7 +185,7 @@
   </section>
 
   <section class="sessao-orcamento">
-    <div class="orcamento-wrapper">
+    <div class="orcamento-wrapper" id="orcamento">
         <h1>Faça um orçamento</h1>
         <form>
             <label for="qtde">Qtde de Páginas</label>
@@ -211,8 +211,25 @@
 
   </section>
 
+  <footer>
+    <div class="footer-content">
+      <p>
+        Copyright &copy; 2020, ETECIA DS - Todos os diretos reservados
+      </p>
+      <div class="social-list">
+        <ul>
+          <li><a href=""><img src="https://img.icons8.com/material-outlined/24/000000/facebook.png"/></a></li>
+          <li><a href="https://github.com/MarceloPrimi"><img src="https://img.icons8.com/material-outlined/24/000000/github.png"/></a>
+          <li><a href=""><img src="https://img.icons8.com/material-outlined/24/000000/linkedin--v1.png"/></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <a href="#home" id="link-topo">
+    <img src="https://img.icons8.com/ios-glyphs/30/000000/collapse-arrow.png"/>
+  </a>
 </div>
-
 </body>
 <script src="script.js"></script>
 </html>
